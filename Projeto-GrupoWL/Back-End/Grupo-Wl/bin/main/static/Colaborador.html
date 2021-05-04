@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Grupo WL - Colaborador</title>
+<link rel="stylesheet" type="text/css" href="CSS/estiloPages.css"/>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<a href="#">
+				<img src="Images/logotipo.jpg"/>
+			</a>
+		</div>
+	</header>
+	
+	<script>
+		function validandoFormulario(){
+			
+			var validacao = true;
+			
+			var conteudo_comidas = document.forms["meu_form"].s3.selectedIndex;
+			
+			var conteudo_bebidas = document.forms["meu_form"].s2.selectedIndex;
+			
+			var conteudo_frios = document.forms["meu_form"].s1.selectedIndex;
+			
+			if(conteudo_comidas == 0 && conteudo_bebidas == 0 && conteudo_frios == 0)
+			{	
+				alert("É necessário selecionar pelo menos um item da lista!");
+				validacao = false;
+				return;
+			}
+			
+			if(validacao == true){
+				alert("Presença Confirmada com Sucesso!");
+			}
+		}
+	</script>
+	<div id="page">
+		
+			<h1 id="h1">Olá Colaborador!</h1>
+			<br/>
+			<div>
+				<span>Para distribuirmos melhor os alimentos a serem tragos para o nosso café,</span>
+				<br/>
+				<span>selecione na lista abaixo um (ou mais) itens ainda disponíveis:</span>
+			</div>
+		<form method="post" name="meu_form" action="#">
+			<fieldset>
+				
+				Comidas: <select id="s3" name="s3">
+							<option id="null">Selecione...</option>
+							<option>Bolo</option>
+							<option>Pães</option>
+							<option>Salgados</option>
+							<option>Torta</option>
+						</select>
+				<br/><br/>
+				Bebidas: <select id="s2" name="s2">
+							<option id="null">Selecione...</option>
+							<option>Café</option>
+							<option>Chá</option>
+							<option>Suco</option>
+							<option>Iogurte</option>
+							<option>Refrigerante</option>
+						</select>
+				<br/><br/>
+				Frios: <select id="s1" name="s1">
+							<option id="null">Selecione...</option>
+							<option>Presunto</option>
+							<option>Queijo</option>
+							<option>Mortadela</option>
+							<option>Salame</option>
+							<option>Peito de Peru</option>
+						</select>
+				<br/><br/>
+				
+				<input type="Checkbox" id="check" name="check" checked/> 
+				Confirmo que estarei presente na data e hora marcada.
+				<br/><br/>
+				
+				<input type="button" id="c7" value="Confirmar Presença" onClick="validandoFormulario();"/>
+				
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

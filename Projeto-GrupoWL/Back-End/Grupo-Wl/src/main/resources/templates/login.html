@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Grupo WL - Login</title>
+<link rel="stylesheet" type="text/css" th:href="@{/CSS/estiloPages.css}"/>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<a href="#">
+				<img th:src="@{/Images/logotipo.jpg}"/>
+			</a>
+		</div>
+	</header>
+	
+	<div id="page">
+		
+			<h1 id="h1">Bem-Vindo(a) ao Nosso Café Colaborativo!</h1>
+			<br/>
+			<div>
+				<span>Autenticação de Funcionário</span>
+			</div>
+		<form method="post" th:object="${colaborador}" action="#">
+			<fieldset>
+				
+				Nome:<input type="text" id="c1" placeholder="Digite seu nome completo..." th:field="*{nome}"/>
+				<br/><br/>
+				CPF: <input type="text" id="c2" placeholder="Digite seu CPF..." th:field="*{cpf}"/>
+				<br/><br/>
+				Setor: <select id="c3" th:field="*{setor}">
+							<option>Selecione...</option>
+							<option>Administração</option>
+							<option>Curadoria</option>
+							<option>Recursos Humanos</option>
+							<option>Marketing</option>
+							<option>Ouvidoria</option>
+							<option>Outros</option>
+						</select>
+				<br/><br/>
+				Matricula: <input type="text" id="c4" placeholder="Digite o nº da Matricula..." th:field="*{matricula}"/>
+				<br/><br/>
+				Senha: <input type="password" id="c5" placeholder="Digite sua Senha..." th:field="*{senha}"/>
+				<br/><br/>
+			
+			<form method="get" th:action="@{/login/colaborador/new}">	
+				<input type="submit" id="c7" value="Entrar"/>
+			</form>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

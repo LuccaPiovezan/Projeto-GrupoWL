@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Grupo WL - Login</title>
+<link rel="stylesheet" type="text/css" href="CSS/estiloPages.css"/>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<a href="#">
+				<img src="Images/logotipo.jpg"/>
+			</a>
+		</div>
+	</header>
+	
+	<div id="page">
+		
+			<h1 id="h1">Bem-Vindo(a) ao Nosso Café Colaborativo!</h1>
+			<br/>
+			<div>
+				<span>Autenticação de Funcionário</span>
+			</div>
+		<form method="post" action="#">
+			<fieldset>
+				
+				Nome:<input type="text" id="c1" placeholder="Digite seu nome completo..."/>
+				<br/><br/>
+				CPF: <input type="text" id="c2" placeholder="Digite seu CPF..."/>
+				<br/><br/>
+				Setor: <select id="c3">
+							<option>Selecione...</option>
+							<option>Administração</option>
+							<option>Curadoria</option>
+							<option>Recursos Humanos</option>
+							<option>Marketing</option>
+							<option>Ouvidoria</option>
+							<option>Outros</option>
+						</select>
+				<br/><br/>
+				Matricula: <input type="text" id="c4" placeholder="Digite o nº da Matricula..."/>
+				<br/><br/>
+				Senha: <input type="password" id="c5" placeholder="Digite sua Senha..." />
+				<br/><br/>
+				
+				<input type="button" id="c7" value="Entrar" onClick="location.href='Colaborador.html';"/>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+	font-family: "Roboto";
+	font-style: normal;
+	font-size: 15px;
+	text-align: center; 
+	border-spacing: 5px;
+	margin: 0px 0px 2px 0px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+div#logo{
+	
+	background-color: #084b63;
+	height: 200px;
+	line-height: 80px;
+	
+}
+
+h1#h1{
+	font-size: 24px;
+}
+
+fieldset{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	border-left: 3px solid #084b63;
+	border-right: 3px solid #084b63;
+	border-top: 3px solid #084b63;
+	border-bottom: 3px solid #084b63;
+}
+
+span{
+	font-weight: bold;
+}
+
+input, select{
+	width: 250px;
+	margin: 2px;
+	margin-left: 3%;
+	margin-right: auto;
+	border-radius: 5px;
+	padding: 3px;
+	color: black;
+	
+}
+option{
+	color:black;
+}
+
+div#page{
+	background-image: url("../Images/cofe.jpg");
+	height: 453px;
+	
+}
+
+input#c1:hover{
+	background-color: #ffbbbb;
+}
+input#c1{
+	margin-left: 7%;
+}
+
+input#c2:hover{
+	background-color: #ffbe7d;
+}
+input#c2{
+	margin-left: 9%;
+}
+select#c3:hover{
+	background-color: #ffff8c;
+	
+}
+select#c3{
+	margin-left: 7%;
+	width: 260px;
+	text-align: center;
+	
+	
+}
+input#c4:hover{
+	background-color: #9dfb75;
+}
+input#c4{
+	margin-left: 0%;
+}
+input#c5:hover{
+	background-color: #77c7f2;
+}
+input#c5{
+	margin-left: 6%;
+}
+input#c6:hover{
+	background-color: #5357ec;
+	
+}
+input#c6{
+	width: 200px;
+	color: black;
+}
+input#c7:hover{
+	background-color: #c18fef;
+	color: black;
+}
+input#c7{
+	width: 200px;
+	color: black;
+}
+
+input#check{
+	margin-left: -20%;
+	margin-right: -27%;
+
+}
+
+select#s1:hover{
+	background-color: #fcbceb;
+	
+}
+select#s1{
+	margin-left: 8%;
+}
+select#s3{
+	margin-left: 1%;
+}
+select#s2:hover{
+	background-color: #5bcdf2;
+}
+select#s3:hover{
+	background-color: #89c7a4;
+}
